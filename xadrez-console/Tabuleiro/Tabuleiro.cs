@@ -12,7 +12,7 @@
         {
             this.linhas = linhas;
             this.colunas = colunas;
-            pecas = new Peca[linhas, colunas];            
+            pecas = new Peca[linhas, colunas];
         }
 
         // Método que retorna uma peça( aqui ele consegue acessar a Peca na linha e coluna).
