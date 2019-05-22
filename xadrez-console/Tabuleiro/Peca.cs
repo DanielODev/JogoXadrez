@@ -1,8 +1,4 @@
-﻿
-
-using tabuleiro;
-
-namespace tabuleiro
+﻿namespace tabuleiro
 {
     class Peca
     {
