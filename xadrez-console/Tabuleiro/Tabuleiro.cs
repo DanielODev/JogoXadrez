@@ -45,6 +45,22 @@
             p.posicao = pos;
         }
 
+           //Método para retirar uma peça do tabuleiro/ retorna peça
+           public Peca retirarPeca(Posicao pos)
+        {
+            if (peca(pos) == null)
+            {
+                return null;
+            }
+            Peca aux = peca(pos);
+            aux.posicao = null;
+            pecas[pos.linha, pos.coluna] = null;
+            return aux;
+        }
+
+
+
+
         // metodo para testar se uma posição é válida
         public bool posicaoValida(Posicao pos)
         {
