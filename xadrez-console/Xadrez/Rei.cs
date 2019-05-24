@@ -12,7 +12,7 @@ namespace xadrez
             return "R";
         }
         // testa se a casa está livre ou se tem uma peça
-        public bool podeMover(Posicao pos)
+        private bool podeMover(Posicao pos)
         {
             Peca p = tab.peca(pos);
             return p == null || p.cor != this.cor;
