@@ -14,10 +14,16 @@
             this.tab = tab;
             this.cor = cor;
             this.qteMovimentos = 0;
-        }                   
+        }      
+                     
         public void incrementarQtdMovimenos()
         {
             qteMovimentos ++;
+        }
+
+        public void decrementarQtdMovimenos()
+        {
+            qteMovimentos--;
         }
         //metodo retorna se exixte movimentos possiveis/ verifica se a peça não está bloqueada para movimentos
         public bool existeMovimentosPossiveis()
@@ -41,6 +47,7 @@
         {
             return movimentosPossiveis()[pos.linha, pos.coluna];
         }
+
         public abstract bool[,] movimentosPossiveis();
     }
 }
