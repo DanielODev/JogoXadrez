@@ -6,8 +6,7 @@ namespace tabuleiro
         public int linha { get; set; }
         public int coluna { get; set; }
 
-
-        //construtor com argumentos / no caso o this é o escopo, se refere a propriedade da classe.
+        //construtor com argumentos 
         public Posicao(int linha, int coluna)
         {
             this.linha = linha;
@@ -18,7 +17,6 @@ namespace tabuleiro
             this.linha = linha;
             this.coluna = coluna;
         }
-
         //metodo ToString() usado para converter o objeto.
         public override string ToString()
         {

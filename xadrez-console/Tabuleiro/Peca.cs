@@ -14,13 +14,11 @@
             this.tab = tab;
             this.cor = cor;
             this.qteMovimentos = 0;
-        }
-                   
+        }                   
         public void incrementarQtdMovimenos()
         {
             qteMovimentos ++;
         }
-
         //metodo retorna se exixte movimentos possiveis/ verifica se a peça não está bloqueada para movimentos
         public bool existeMovimentosPossiveis()
         {
@@ -38,13 +36,11 @@
             }
             return false;
         }
-
         //metodo pode mover para a dada posição?
         public bool podeMoverPara(Posicao pos)
         {
             return movimentosPossiveis()[pos.linha, pos.coluna];
         }
-
         public abstract bool[,] movimentosPossiveis();
     }
 }

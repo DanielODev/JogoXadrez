@@ -1,6 +1,5 @@
 ﻿using System;
 using tabuleiro;
-
 using xadrez;
 
 namespace xadrez_console
@@ -9,11 +8,6 @@ namespace xadrez_console
     {
         static void Main(string[] args)
         {
-            //PosicaoXadrez pos = new PosicaoXadrez('c', 7);
-            //Console.WriteLine(pos);
-
-            //Console.WriteLine(pos.toPosicao());
-
             try
             {
                 PartidaDeXadrez partida = new PartidaDeXadrez();
@@ -23,12 +17,8 @@ namespace xadrez_console
                     try
                     {
                         Console.Clear();
-                        Tela.imprimirTabuleiro(partida.tab);
+                        Tela.imprimirPartida(partida);
                         Console.WriteLine();
-
-                        Console.WriteLine("turno: " + partida.turno);
-                        Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
-
                         Console.Write("Digite a posiçao de origem: ");
                         Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
                         partida.validarPosicaoDeOrigem(origem);
@@ -56,7 +46,6 @@ namespace xadrez_console
             {
                 Console.WriteLine(e.Message);
             }
-
             Console.ReadLine();
         }
     }
