@@ -4,7 +4,7 @@ namespace xadrez
 {
     class Peao : Peca
     {
-        public Peao(Tabuleiro tab, Cor cor) : base(lab, cor)
+        public Peao(Tabuleiro tab, Cor cor) : base(tab, cor)
         {
         }
 
