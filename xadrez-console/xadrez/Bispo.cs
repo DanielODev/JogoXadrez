@@ -6,6 +6,7 @@ namespace xadrez
     {
         public Bispo(Tabuleiro tab, Cor cor) : base(tab, cor)
         {
+            //Mudança em Develop
         }
 
         public override string ToString()

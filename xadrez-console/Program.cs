@@ -8,6 +8,8 @@ namespace xadrez_console
     {
         static void Main(string[] args)
         {
+            Console.SetWindowSize(55, 20);
+            //Console.SetWindowSize(100, 50);
             try
             {
                 PartidaDeXadrez partida = new PartidaDeXadrez();
@@ -15,7 +17,7 @@ namespace xadrez_console
                 while (!partida.terminada)
                 {
                     try
-                    {
+                    {   
                         Console.Clear();
                         Tela.imprimirPartida(partida);
                         Console.WriteLine();

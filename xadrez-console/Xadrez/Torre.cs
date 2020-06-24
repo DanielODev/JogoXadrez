@@ -6,6 +6,7 @@ namespace xadrez
     {
         public Torre(Tabuleiro tab, Cor cor) : base(tab, cor)
         {
+            //Mudança em Develop
         }
         public override string ToString()
         {
@@ -26,7 +27,7 @@ namespace xadrez
 
             //acima - norte
             pos.definirValores(posicao.linha - 1, posicao.coluna);
-           while(tab.posicaoValida(pos) && podeMover(pos))
+            while(tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
                 if (tab.peca(pos) != null && tab.peca(pos).cor != cor)
