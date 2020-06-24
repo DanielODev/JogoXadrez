@@ -7,8 +7,10 @@ namespace xadrez_console
 {
     class Tela
     {
+              
         public static void imprimirPartida(PartidaDeXadrez partida)
         {
+            //Console.SetWindowSize(150, 100);
             imprimirTabuleiro(partida.tab);
             Console.WriteLine();
             imprimirPecasCapturadas(partida);
